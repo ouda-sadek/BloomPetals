@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="entreprise.html">
+        <a href="contact.html">
+        <a href="realisations.html">
+        <a href="index.html">
     <title>Contact</title>
 </head>
 <body>
@@ -11,20 +15,51 @@
         
         <nav id="navbar">
             <ul>
-                <a href="#">Home</a>
-                <a href="#">Entreprise</a>
-                <a href="#">Réalisations</a>
-                <a href="#">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="entreprise.html">Entreprise</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="contact.html">Contact</a>
             </ul>
         </nav>
     </header>
     <main>
         ➔ Une liste déroulante permettant la sélection de sa civilité
+        <form action="/action_page.php">
+            <label for="cars">Choisissez votre civilité:</label>
+            <select id="civilité" name="civilité">
+              <option value="mlle">Mlle</option>
+              <option value="mme">Mme</option>
+              <option value="mr">Mr</option>
+            </select>
+            <input type="submit">
+          </form>
+          
         ➔ Le nom et prénom du client
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+        </form>
         ➔ Son adresse postale
+        <form>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+        </form>
         ➔ Une checkbox permettant la validation de la politique de confidentialité
           de l’entreprise.
+          <form action="/action_page.php">
+            <input type="checkbox" id="confidentialité" name="confidentialité" value="confidentialité">
+            <label for="confidentialité"> la validation de la politique de confidentialité
+                de l’entreprise.</label><br>
+            </form> 
+          
         ➔ Un bouton de validation
+        <form>
+            <input type="submit" value="Submit">
+        </form>
+
+        
     </main>
     <footer id="footer">
         <p>Nass My Website. All rights reserved.</p>
